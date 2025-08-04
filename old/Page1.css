@@ -1,0 +1,61 @@
+body{
+    background: linear-gradient(to right, #000000, #5b5b5b);
+}
+.posisi{
+    text-align: center;
+    margin-top: 20%;
+}
+h1{
+    font-family: cursive;
+    font-size: 25px;
+    color: white;
+}
+h3{
+    font-family: Georgia, serif;;
+    color: white;
+}
+.button{
+    display: inline-block;
+    border-radius: 4px;
+    background-color: rgb(255, 205, 214);
+    border: none;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 180px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+}
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    font-family: cursive;
+}
+.button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25px;
+    transition: 0.5s;  
+}
+.button:hover span{
+    padding-right: 25px; 
+}
+.button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+img{
+    margin: 0;
+    position: absolute;
+    width: 150px;
+    height: 200px;
+    right: 46%;
+    top: 12%;
+}
